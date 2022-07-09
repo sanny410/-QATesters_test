@@ -6,6 +6,11 @@ body {
     height: 100vh;
     padding-top: 50px;
     font-family: 'Gentium Book Plus', serif;
+
+    @media (max-width: 768px) {
+        padding-top: 20px;
+    }
+
 }
 
 #root {
@@ -16,4 +21,11 @@ body {
 ._container {
     max-width: 1290px;
     margin: 0 auto;
+}
+
+@media(max-width: 768px) {
+    ._container {
+        max-width: 1290px;
+
+    }
 }
