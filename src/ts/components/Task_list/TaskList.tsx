@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import ListItem from './ListItem'
-import {List, ListItemType} from '../../types'
+import {List} from '../../types'
 import './style.scss'
 import '../../../test_data.json';
 

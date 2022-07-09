@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Status from './StatusItem';
-import {List, ListItemType} from '../../types'
+import { ListItemType} from '../../types'
 import './style.scss'
 
 const ListItem = ({item} : {item: ListItemType}) => {

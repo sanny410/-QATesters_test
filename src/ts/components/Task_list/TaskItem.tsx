@@ -1,5 +1,4 @@
-import React, {useEffect} from 'react';
-import Status from './StatusItem'
+import React  from 'react';
 import data from '../../../test_data.json';
 import { useParams , Link} from "react-router-dom";
 import {ListItemType} from '../../types'

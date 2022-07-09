@@ -2,12 +2,12 @@ import React, {useState, useEffect } from 'react';
 import Header from "../Header/Header";
 import Pagination from '../Pagination/Pagination'
 import TaskList from '../Task_list/TaskList'
-import {List, ListItemType} from '../../types'
+import { ListItemType} from '../../types'
 import data from '../../../test_data.json';
 
 
 const MainPage = () => {
-    const [list, setList]= useState<ListItemType[]>(data);
+    const [list]= useState<ListItemType[]>(data);
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [itemsPerPage, setItemsPerPage] = useState<number>(10);
     const [btnPrevDisabled, setbtnPrevDisabled] = useState<boolean>(true);
@@ -28,7 +28,7 @@ const MainPage = () => {
         } else if (currentPage < Math.ceil(list.length / itemsPerPage)) {
             setbtnNextDisabled(false)
         }
-    }, [currentPage])
+    }, [currentPage, list.length, itemsPerPage])
 
 
     const paginate = (pageNumber: number) => {

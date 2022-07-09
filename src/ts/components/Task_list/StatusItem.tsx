@@ -3,7 +3,6 @@ import './style.scss'
 
 const Status = ({status, classStatus } : {status: string, classStatus: string}) => {
 
-    let statusTask: string = ''
         switch (status) {
             case 'new': return <Status status = 'Новое' classStatus={'new'}/>
             case 'completed': return <Status status ='Завершенный' classStatus={'completed'}/>
